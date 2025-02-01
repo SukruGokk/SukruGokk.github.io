@@ -34,7 +34,12 @@ export async function sortTeams(event){
                 }
             }else if(stat=='teop'){
                 score += doc.get('teopl1')*2 + doc.get('teopl2')*3 + doc.get('teopl3')*4 + doc.get('teopl4')*5 + doc.get('teop_net')*4 + doc.get('teop_processor')*6;
-            }else{
+            }else if(stat=='coral'){
+                score += doc.get('autol1')*3 + doc.get('autol2')*4 + doc.get('autol3')*6 + doc.get('autol4')*7 + doc.get('teopl1')*2 + doc.get('teopl2')*3 + doc.get('teopl3')*4 + doc.get('teopl4')*5;
+            }else if(stat=='algae'){
+                score += doc.get('auto_net')*4 + doc.get('auto_processor')*6 + doc.get('teop_net')*4 + doc.get('teop_processor')*6;
+            }
+            else{
                 score += parseInt(doc.get(stat));
             }
         }
@@ -60,7 +65,7 @@ export async function sortTeams(event){
                              style="width:100%">
 
                             <div class="d-flex flex-grow-1">
-                                <div style='width:30%'><span>${Math.round(team.score, 3)}</span></div>
+                                <div style='width:30%'><span>${Math.round(team.score)}</span></div>
                                 <div style='width:30%;'><span>${team.teamNumber}</span></div>
                                 <div><span>${team.teamName}</span></div>
                             </div>
