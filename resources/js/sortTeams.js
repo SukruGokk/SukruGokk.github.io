@@ -43,7 +43,13 @@ export async function sortTeams(event){
                 score += parseInt(doc.get(stat));
             }
         }
-        teams.push({'score':Math.round(score/matchesSnapshot.size, 2), 'teamNumber':teamDoc.id, 'teamName':teamDoc.get('teamName')});
+        let ratio = score/matchesSnapshot.size;
+        if (ratio<1){
+            ratio = Math.round(ratio*10)/10;
+        }else{
+            ratio = Math.round(ratio);
+        }
+        teams.push({'score':ratio, 'teamNumber':teamDoc.id, 'teamName':teamDoc.get('teamName')});
     }
     let scores = [];
     teams.forEach((val)=>{
@@ -65,9 +71,9 @@ export async function sortTeams(event){
                              style="width:100%">
 
                             <div class="d-flex flex-grow-1">
-                                <div style='width:30%'><span>${Math.round(team.score)}</span></div>
-                                <div style='width:30%;'><span>${team.teamNumber}</span></div>
-                                <div><span>${team.teamName}</span></div>
+                                <div style='width:20%'><span>${team.score}</span></div>                            
+                                <div style='flex-grow:1'><span>${team.teamName}</span></div>
+                                <div style='float:right'><span>${team.teamNumber}</span></div>
                             </div>
                         </div>
 

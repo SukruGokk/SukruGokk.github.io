@@ -1,19 +1,21 @@
-<h3>Saved Matches</h3>
-<hr class='my-4'>
-<div style='flex-grow:1;position:relative' class="d-flex flex-column">
-<ol class="list-group" id='matchesList' style='margin-bottom:60px'>
-</ol>
-<div class='d-flex justify-content-between' style='position:absolute;bottom:0;'>
-<select class="form-select w-auto" id='chartType'>
-  <option value="performance">Performance</option>
-  <option value="coral-auto">Coral - Auto</option>
-  <option value="coral-teop">Coral - Teop</option>
-  <option value="algae">Algae</option>
-  <option value='climb'>Climb</option>
-</select>
-<button type='button' class='btn btn-success ms-2' id='createGraph'>Create</button>
+<div class='flex-column p-2 d-flex' style='height:100vh;'>
+    <h3 class='mt-2'>Saved Matches</h3>
+    <hr class='mb-3'>
+    <div style='flex-grow:1;' class='d-flex flex-column'>
+        <ul class="list-group overflow-auto" id='matchesList' style='max-height:80vh'>
+        </ul> 
+        <div class='d-flex' style='margin-top:auto;'>
+            <select class="form-select w-auto" id='chartType'>
+              <option value="performance">Performance</option>
+              <option value="coral-auto">Coral - Auto</option>
+              <option value="coral-teop">Coral - Teop</option>
+              <option value="algae">Algae</option>
+              <option value='climb'>Climb</option>
+            </select>
+            <button type='button' class='btn btn-success ms-2' id='createGraph'>Create</button>
+        </div>
+        <button class="btn btn-primary mt-2" onclick="loadPage('graph.html')" id="matchesGraph">
+          <i class="bi bi-arrow-left"></i> Back
+        </button>
+    </div>
 </div>
-</div>
-<button class="btn btn-primary mt-2" onclick="loadPage('graph.html')" id="matchesGraph">
-  <i class="bi bi-arrow-left"></i> Back
-</button>
