@@ -2,7 +2,7 @@ import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } fro
 import { db, teamsPage } from '/resources/js/index.js';
 
 export async function checkTeamNumber(teamNumber){
-    let urls = ['https://cors-anywhere.herokuapp.com/https://www.thebluealliance.com/api/v3/event/2025tuis/teams/simple', 'https://cors-anywhere.herokuapp.com/https://www.thebluealliance.com/api/v3/event/2025tuhc/teams/simple']
+    let urls = ['https://bluealliance-proxy.onrender.com/proxy/event/2025tuis/teams/simple', 'https://bluealliance-proxy.onrender.com/proxy/event/2025tuhc/teams/simple']
     let team_name = false;
 
     for (const url of urls) {
