@@ -1,16 +1,17 @@
 <div class='flex-column p-2 d-flex' style='height:100vh;'>
     <h3 class='mt-2'>Saved Teams</h3> 
-    <hr class='mb-3'>
+    <hr class='mb-3'> 
     <div style='flex-grow:1;' class='d-flex flex-column'>
         <ul class="list-group overflow-auto" id='teamsList' style='max-height:80vh'>
         </ul>
         <div class='d-flex' style='margin-top:auto;margin-right:auto'>
-        <button type='button' class='btn btn-success' id='compareTeams'>Compare</button>
-        <button type='button' class='btn btn-success ms-2' id='createTeamsLineGraph' style='display:none'>Line</button>
-        <button type='button' class='btn btn-success ms-2' id='analyze' onclick='loadPage("analyze.html")'>Analyze</button>
-        <button type='button' class='btn btn-dark ms-2' id ='deleteTeamSelect'>Delete</button>
+            <button type='button' class='btn btn-success' id='compareTeams'>Compare</button>
+            <button type='button' class='btn btn-success ms-2' id='createTeamsLineGraph' style='display:none'>Line</button>
+            <button type='button' class='btn btn-success ms-2' id='analyze' onclick='loadPage("analyze.html")'>Analyze</button>
+            <button type='button' class='btn btn-dark ms-2' id ='deleteTeamSelect'>Delete</button>
+        </div>
+        <button class="btn btn-primary mt-2" onclick="loadPage('form.html')">
+          <i class="bi bi-arrow-left"></i> Back
+        </button>
     </div>
-    <button class="btn btn-primary mt-2" onclick="loadPage('form.html')">
-      <i class="bi bi-arrow-left"></i> Back
-    </button>
 </div>
