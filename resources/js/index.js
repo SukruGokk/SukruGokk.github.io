@@ -55,7 +55,7 @@ $(document)
 
         setTimeout(() => {
             this.classList.remove('clicked');
-        }, 150);
+        }, 100);
 
         let elements = document.getElementsByClassName('number');
         let allZero = true;

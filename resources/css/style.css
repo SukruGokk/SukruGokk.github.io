@@ -67,11 +67,16 @@ input[type]:focus,
   outline: 0 none;
 }
 
+#moved:checked{
+  background-color: rgba(126, 239, 104, 0.8) !important;
+  border: 0;
+}
+
 .value-button {
     cursor: pointer;
     outline: none;  
-    border-color: #6c757d; /* Varsayılan gri border */
-    transition: border-color 0.1s ease-out, box-shadow 0.1s ease-out; /* Geçiş animasyonu */
+    border-color: #6c757d;
+    transition: border-color 0.1s ease-out, box-shadow 0.1s ease-out;
 }
 
 
