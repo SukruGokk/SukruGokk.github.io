@@ -8,7 +8,7 @@ export async function submit (event) {
         Swal.fire({
             title: "Invalid!",
             text: "Invalid or missing information.",
-            icon: "warning"
+            icon: "warning",
         });
         return
     }

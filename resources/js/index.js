@@ -49,11 +49,11 @@ $(document)
         if (teamName){
             $('#teamName').val(teamName);
             $('#teamName').attr('valid', 'true');
-            $('#teamName').removeClass('text-danger').removeClass('border-danger');
+            $('#teamName').removeClass('text-danger').removeClass('btn-outline-danger');
         }else{
             $('#teamName').val('Invalid Team Number!');
             $('#teamName').attr('valid', 'false');
-            $('#teamName').addClass('text-danger').addClass('border-danger');
+            $('#teamName').addClass('text-danger').addClass('btn-outline-danger');
         }
 });
 
@@ -143,7 +143,7 @@ $(document)
             elements[i].style.display = 'block';
         }
         $('#compareTeams').html('Bar');
-        $('#compareTeams').removeClass('btn-warning').addClass('btn-success');
+        $('#compareTeams').removeClass('btn-warning').addClass('btn-outline-success');
         $('#compareTeams').attr('id', 'createTeamsBarGraph');
         document.getElementById('createTeamsLineGraph').style.display = 'block';
 });
