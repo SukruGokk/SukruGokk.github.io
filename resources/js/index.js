@@ -31,24 +31,32 @@ export const db = getFirestore(app);
 // Form Page
 $(document)
     .on('change', '#teamNumber', async function(event){
+        console.log('checking');
         let teamName;
         await checkTeamNumber(event.target.value)
             .then((data) => {
+                console.log(data);
                 teamName = data;
             });
         if (teamName){
             $('#teamName').val(teamName);
             $('#teamName').attr('valid', 'true');
-            $('#teamName').removeClass('text-danger').removeClass('btn-outline-danger');
+            $('#teamName').removeClass('text-danger').removeClass('border-danger');
         }else{
             $('#teamName').val('Invalid Team Number!');
             $('#teamName').attr('valid', 'false');
-            $('#teamName').addClass('text-danger').addClass('btn-outline-danger');
+            $('#teamName').addClass('text-danger').addClass('border-danger');
         }
 });
 
 $(document)
     .on('click', '.value-button', function(event){
+        this.classList.add('clicked');
+
+        setTimeout(() => {
+            this.classList.remove('clicked');
+        }, 150);
+
         let elements = document.getElementsByClassName('number');
         let allZero = true;
         for (let i = 0; i<elements.length; i++){
@@ -133,7 +141,6 @@ $(document)
             elements[i].style.display = 'block';
         }
         $('#compareTeams').html('Bar');
-        $('#compareTeams').removeClass('btn-warning').addClass('btn-outline-success');
         $('#compareTeams').attr('id', 'createTeamsBarGraph');
         document.getElementById('createTeamsLineGraph').style.display = 'block';
 });
@@ -145,7 +152,7 @@ $(document)
         for (let i = 0; i < elements.length; i++){
             elements[i].style.display = 'block';
         }
-        $('#deleteTeamSelect').removeClass('btn-dark').addClass('btn-danger');
+        $('#deleteTeamSelect').removeClass('btn-outline-danger').addClass('btn-danger').addClass('text-white');
         $('#deleteTeamSelect').attr('id', 'deleteTeam');
 });
 

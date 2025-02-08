@@ -1,6 +1,20 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
 import { db } from '/resources/js/index.js';
 
+let options =     
+            {
+                plugins: {
+                    legend: {
+                        labels: { color: 'white'}
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: "white" }},
+                    y: { ticks: { color: "white" }}
+                },
+                maintainAspectRatio: false,
+            }
+
 export async function createCustomizable(event){
         let x_axis = $('#xaxis').val();
         let y_axis = $('#yaxis').val();
@@ -14,6 +28,7 @@ export async function createCustomizable(event){
         const teams_collection_ref = await collection(db, 'teams');
         await getDocs(teams_collection_ref)
             .then(async (snapshot) => {
+                console.log(x_axis);
                 for (const docSnap of snapshot.docs) {
                     const team_doc_ref = doc(db, 'teams', docSnap.id);
                     const matches_collection_ref = collection(team_doc_ref, "matches");
@@ -75,42 +90,38 @@ export async function createCustomizable(event){
 
             if (window.chart) {
                 window.chart.destroy(); // Önceki grafiği temizle
+                delete window.chart;
             }
 
             if(!single_axis){
+                console.log('Bubble chart!!!');
+                options.scales.x.title = {display: true, text: x_axis, color: 'white'};
+                options.scales.y.title = {display: true, text: y_axis, color:'white'};
                 window.chart = new Chart('chartCanvas', {
                     type: 'bubble',
                     data: {
                         datasets: datasets
                     },
-                    options: {
-                        scales: {
-                            x: { title: { display: true,
-                                        text: x_axis } },
-                            y: { title: { display: true,
-                                        text: y_axis } },
-                        },
-                        plugins: {
-                        },
-                    maintainAspectRatio: false,
-                },});
+                    options: options,
+                });
                 setTimeout(function() {
                   window.chart.update();
                 }, 500);
             }else{
+                console.log('Single axis!!!');
+                delete options.scales.x.title;
+                delete options.scales.y.title;
                 window.chart = new Chart('chartCanvas', {
                     type: 'bar',
                     data: {
                         labels: [y_axis],
                         datasets: single_axis_datasets
                     },
-                    options: {
-                        maintainAspectRatio: false
-                    }
+                    options: options
                 });
                 setTimeout(function() {
                   window.chart.update();
-                }, 500);
+                }, 1000);
             }
    
 }

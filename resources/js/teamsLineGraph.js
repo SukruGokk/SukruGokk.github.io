@@ -15,8 +15,8 @@ let options =
                     }
                 },
                 scales: {
-                    x: { ticks: { color: "white" } }, // X ekseni yazıları beyaz
-                    y: { ticks: { color: "white" } }  // Y ekseni yazıları beyaz
+                    x: { ticks: { color: "white" } },
+                    y: { ticks: { color: "white" } }
                 },
                 maintainAspectRatio: false,
             }
