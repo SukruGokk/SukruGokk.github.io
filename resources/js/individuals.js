@@ -1,6 +1,36 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
 import { db } from '/resources/js/index.js';
 
+let options =     
+            {
+                plugins: {
+                    title: {
+                      display: true,
+                      fontSize: 20,
+                      text: 'FRC Scout Chart',
+                      color: 'white'
+                    },
+                    legend: {
+                        labels: { color: 'white'}
+                    }
+                },
+                maintainAspectRatio: false,
+                scales: {
+                   x: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                   y: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                },
+            }
+
+const colors = ['#2C3E50','#39FF14','#9B59B6','#E74C3C', '#F1C40F' ]
+
 function standardDeviation(arr) {
     if (arr.length === 0) return 0;
 
@@ -51,6 +81,13 @@ export async function performanceGraph(elem){
             
             let chart;
 
+            options.plugins.title.text = `${elem.attr('team')} Performance`;
+            options.scales =
+                            {
+                                x: { ticks: { color: "white" } }, // X ekseni yazıları beyaz
+                                y: { ticks: { color: "white" } }  // Y ekseni yazıları beyaz
+                            },
+
             Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
                 showCloseButton: true,
@@ -77,16 +114,7 @@ export async function performanceGraph(elem){
                               fill: false
                             }]
                         },
-                        options: {
-                            plugins: {
-                                title: {
-                                  display: true,
-                                  fontSize: 20,
-                                  text: `${elem.attr('team')} Performance`
-                                }
-                            },
-                            maintainAspectRatio: false,
-                        },
+                        options: options
                     });
                 }
             }).then((result) => {
@@ -122,6 +150,8 @@ export async function coralAutoGraph(elem){
 
     let chart;
 
+    options.plugins.title.text = `${elem.attr('team')} Autonomous Coral Distribution`;
+
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
                 showCloseButton: true,
@@ -134,6 +164,7 @@ export async function coralAutoGraph(elem){
                     data: {
                         datasets: [{
                             data: [autol1, autol2, autol3, autol4],
+                            backgroundColor: colors
                         }],
 
                         // These labels appear in the legend and in the tooltips when hovering different arcs
@@ -144,17 +175,8 @@ export async function coralAutoGraph(elem){
                             'Level 4',
                             ]
                     },
+                    options: options
 
-                    options: {
-                        plugins: {
-                            title: {
-                              display: true,
-                              fontSize: 20,
-                              text: `${elem.attr('team')} Autonomous Coral Distribution`
-                            }
-                        },
-                        maintainAspectRatio: false,
-                    },
                 });
             }
             }).then((result) => {
@@ -191,6 +213,8 @@ export async function coralTeopGraph(elem){
 
     let chart;
 
+    options.plugins.title.text = `${elem.attr('team')} Te-Op Coral Distribution`;
+
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
                 showCloseButton: true,
@@ -203,6 +227,7 @@ export async function coralTeopGraph(elem){
                 data: {
                     datasets: [{
                         data: [teopl1, teopl2, teopl3, teopl4],
+                        backgroundColor: colors
                     }],
 
                     // These labels appear in the legend and in the tooltips when hovering different arcs
@@ -214,16 +239,7 @@ export async function coralTeopGraph(elem){
                         ]
                 },
 
-                options: {
-                        plugins: {
-                            title: {
-                              display: true,
-                              fontSize: 20,
-                              text: `${elem.attr('team')} Te-Op Coral Distribution`
-                            }
-                        },
-                        maintainAspectRatio: false,
-                    },
+                options: options
                 });
             }
             }).then((result) => {
@@ -259,6 +275,8 @@ export async function algaeGraph(elem){
 
     let chart;
 
+    options.plugins.title.text = `${elem.attr('team')} Algae Distribution`;
+
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
                 showCloseButton: true,
@@ -271,6 +289,7 @@ export async function algaeGraph(elem){
                 data: {
                     datasets: [{
                         data: [auto_net, auto_processor, teop_net, teop_processor],
+                        backgroundColor: colors
                     }],
 
                     // These labels appear in the legend and in the tooltips when hovering different arcs
@@ -282,16 +301,7 @@ export async function algaeGraph(elem){
                         ]
                 },
 
-                options: {
-                        plugins: {
-                            title: {
-                              display: true,
-                              fontSize: 20,
-                              text: `${elem.attr('team')} Algae Distribution`
-                            }
-                        },
-                        maintainAspectRatio: false,
-                    },
+                options: options
                 });
             }
             }).then((result) => {
@@ -335,6 +345,8 @@ export async function climbGraph(elem){
 
     let chart;
 
+    options.plugins.title.text = `${elem.attr('team')} Climb Distribution`;
+
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
                 showCloseButton: true,
@@ -347,6 +359,7 @@ export async function climbGraph(elem){
                 data: {
                     datasets: [{
                         data: [shallow, deep, parked, not_parked, failed],
+                        backgroundColor: colors
                     }],
 
                     // These labels appear in the legend and in the tooltips when hovering different arcs
@@ -359,16 +372,7 @@ export async function climbGraph(elem){
                         ]
                 },
 
-                options: {
-                        plugins: {
-                            title: {
-                              display: true,
-                              fontSize: 20,
-                              text: `${elem.attr('team')} Climb Distribution`
-                            }
-                        },
-                        maintainAspectRatio: false,
-                    },
+                options: options
                 });
             }
             }).then((result) => {

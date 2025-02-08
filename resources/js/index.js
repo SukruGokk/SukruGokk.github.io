@@ -28,16 +28,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const db = getFirestore(app);
 
-const plugin = {
-    beforeInit(chart) {
-        const originalFit = chart.legend.fit;
-        chart.legend.fit = function fit() {
-            originalFit.bind(chart.legend)();
-            this.height += 20;
-        }
-    }
-}
-
 // Form Page
 $(document)
     .on('change', '#teamNumber', async function(event){

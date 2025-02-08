@@ -1,6 +1,28 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
 import { db } from '/resources/js/index.js';
 
+let options =     
+            {
+                plugins: {
+                    title: {
+                      display: true,
+                      fontSize: 20,
+                      text: 'FRC Scout Chart',
+                      color: 'white'
+                    },
+                    legend: {
+                        labels: { color: 'white'}
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: "white" } }, // X ekseni yazıları beyaz
+                    y: { ticks: { color: "white" } }  // Y ekseni yazıları beyaz
+                },
+                maintainAspectRatio: false,
+            }
+
+
+
 export async function teamsBarGraph(event){
         let teams = []
         let elements = document.getElementsByClassName('team-check')
@@ -60,6 +82,8 @@ export async function teamsBarGraph(event){
         }
 
         let chart;
+
+        options.plugins.title.text = 'Overall';
         
         Swal.fire({
             html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
@@ -71,19 +95,7 @@ export async function teamsBarGraph(event){
                 chart = new Chart('chartCanvas', {
                     type:'bar',
                     data: data,
-                    options: {
-                        maintainAspectRatio: false,
-                        title: {
-                            display: true,
-                            text: `Overall`,  // Başlık metni
-                            position: 'bottom',
-                            font: {
-                                size: 50,
-                                weight: 'bold',
-                            },
-                            padding: 10
-                        },
-                    },
+                    options: options
                 });
             }
         }).then((result) => {

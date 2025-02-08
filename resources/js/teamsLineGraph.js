@@ -1,6 +1,26 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
 import { db } from '/resources/js/index.js';
 
+let options =     
+            {
+                plugins: {
+                    title: {
+                      display: true,
+                      fontSize: 20,
+                      text: 'FRC Scout Chart',
+                      color: 'white'
+                    },
+                    legend: {
+                        labels: { color: 'white'}
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: "white" } }, // X ekseni yazıları beyaz
+                    y: { ticks: { color: "white" } }  // Y ekseni yazıları beyaz
+                },
+                maintainAspectRatio: false,
+            }
+
 export async function teamsLineGraph(event){
         let teams = {};
         let scores = {};
@@ -55,6 +75,7 @@ export async function teamsLineGraph(event){
             });
         }
 
+        options.plugins.title.text = 'Total Score';
 
         Swal.fire({
             html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
@@ -68,16 +89,7 @@ export async function teamsLineGraph(event){
                     data: {
                         datasets: datasets
                     },
-                    options: {
-                        maintainAspectRatio: false,
-                        plugins:{
-                            title: {
-                                display: true,
-                                text: 'Total Score',
-                                fontSize: 20,
-                            },
-                        }
-                    },
+                    options: options
                 });
             }
         }).then((result) => {
