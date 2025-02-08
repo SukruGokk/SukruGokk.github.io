@@ -151,6 +151,19 @@ export async function coralAutoGraph(elem){
     let chart;
 
     options.plugins.title.text = `${elem.attr('team')} Autonomous Coral Distribution`;
+    options.scales =
+                {
+                   x: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                   y: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                }
 
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
@@ -214,6 +227,19 @@ export async function coralTeopGraph(elem){
     let chart;
 
     options.plugins.title.text = `${elem.attr('team')} Te-Op Coral Distribution`;
+    options.scales =
+                {
+                   x: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                   y: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                }
 
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
@@ -276,6 +302,19 @@ export async function algaeGraph(elem){
     let chart;
 
     options.plugins.title.text = `${elem.attr('team')} Algae Distribution`;
+    options.scales =
+                {
+                   x: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                   y: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                }
 
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
@@ -346,6 +385,19 @@ export async function climbGraph(elem){
     let chart;
 
     options.plugins.title.text = `${elem.attr('team')} Climb Distribution`;
+    options.scales =
+                {
+                   x: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                   y: {
+                        ticks:{
+                            display: false,
+                        }
+                   },
+                }
 
     Swal.fire({
                 html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
