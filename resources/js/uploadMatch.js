@@ -1,5 +1,6 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
 import { db } from '/resources/js/index.js';
+import { checkTeamNumber } from '/resources/js/checkTeamNumber.js'
 
 export async function uploadMatch(event){
     Array.from(event.target.files).forEach(async (file) => {
@@ -16,19 +17,21 @@ export async function uploadMatch(event){
                     console.log(err);
                 });
 
-                let keys = ['matchNumber', 'autol1', 'autol2', 'autol3', 'autol4', 'auto_net', 'auto_processor', 'teopl1', 'teopl2', 'teopl3', 'teopl4', 'teop_net', 'teop_processor', 'cage', 'score', 'teamName']
+                let keys = ['matchNumber', 'autol1', 'autol2', 'autol3', 'autol4', 'auto_net', 'auto_processor', 'teopl1', 'teopl2', 'teopl3', 'teopl4', 'teop_net', 'teop_processor', 'cage', 'score', 'team_number']
                 let match_data = {};
                 keys.forEach((key, index) => {
                     match_data[key] = values[index];
                 });
 
+                const team_name = checkTeamNumber(match_data.team_number)
+
                 // Create team document if doesnt exist
                 const teams_collection_ref = await collection(db, 'teams');
-                const team_doc_ref = await doc(teams_collection_ref, match_data.teamName);
+                const team_doc_ref = await doc(teams_collection_ref, match_data.team_number);
                 await getDoc(team_doc_ref).then(async (docSnapshot) => {
                   if (!docSnapshot.exists()) {
                     await setDoc(team_doc_ref, {
-                        'name':match_data.teamName
+                        'name':team_name
                     }).catch((error) => {
                         console.log('An error occured:',error);
                     });
