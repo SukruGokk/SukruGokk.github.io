@@ -11,8 +11,7 @@ export async function uploadMatch(event){
                 const qr = new Html5Qrcode('reader');
                 await qr.scanFile(file, true).then((decoded_text, decoded_result) => {
                     values = decoded_text.split(',');
-                    const convert_if_number = (item) => /^\d+$/.test(item) ? parseInt(item, 10) : item;
-                    values = values.map(convert_if_number);
+                    console.log(values)
                 }).catch((err) => {
                     console.log(err);
                 });
@@ -23,7 +22,9 @@ export async function uploadMatch(event){
                     match_data[key] = values[index];
                 });
 
-                const team_name = checkTeamNumber(match_data.team_number)
+                console.log(match_data)
+                const team_name = await checkTeamNumber(parseInt(match_data.team_number))
+                console.log(team_name)
 
                 // Create team document if doesnt exist
                 const teams_collection_ref = await collection(db, 'teams');
@@ -31,7 +32,8 @@ export async function uploadMatch(event){
                 await getDoc(team_doc_ref).then(async (docSnapshot) => {
                   if (!docSnapshot.exists()) {
                     await setDoc(team_doc_ref, {
-                        'name':team_name
+                        'teamNumber':match_data.team_number,
+                        'teamName':team_name
                     }).catch((error) => {
                         console.log('An error occured:',error);
                     });
