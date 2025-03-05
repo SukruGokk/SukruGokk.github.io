@@ -1,5 +1,5 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
-import { db, teamsPage } from '/resources/js/index.js';
+import { db, teamsPage, sync } from '/resources/js/index.js';
 
 export async function deleteMatch(){
         let team_deleted = false;
@@ -23,6 +23,7 @@ export async function deleteMatch(){
                             icon: "success"
                         }).then(()=>{
                             if (team_deleted){
+                                sync();
                                 loadPage('graph.html');
                                 teamsPage();
                             }
@@ -77,7 +78,7 @@ export async function deleteTeam(){
                             });
                         });
                     });
-
+                    sync();
                     loadPage("graph.html")
                     teamsPage();
 

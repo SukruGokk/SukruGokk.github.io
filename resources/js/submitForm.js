@@ -1,5 +1,5 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
-import { db } from '/resources/js/index.js';
+import { db, sync } from '/resources/js/index.js';
 import { checkTeamNumber } from '/resources/js/checkTeamNumber.js';
 
 export async function submit (event) {
@@ -94,6 +94,7 @@ export async function submit (event) {
                 }
 
                 await setDoc(matchDocRef, matchData).then(() => {
+                    sync();
                     console.log("Match data saved");
                     $('#teamName').val('');
                     $('#teamName').attr('valid', 'false');

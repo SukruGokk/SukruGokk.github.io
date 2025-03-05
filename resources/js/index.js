@@ -34,7 +34,7 @@ localStorage.setItem('teams', "null");
 
 let synced = true;
 
-async function sync(){
+export async function sync(){
     synced=false;
     const teams_collection_ref = await collection(db, 'teams');
     await getDocs(teams_collection_ref)

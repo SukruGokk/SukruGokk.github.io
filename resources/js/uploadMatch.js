@@ -1,5 +1,5 @@
 import { getFirestore, getDocs, getDoc, setDoc, collection, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
-import { db } from '/resources/js/index.js';
+import { db, sync } from '/resources/js/index.js';
 import { checkTeamNumber } from '/resources/js/checkTeamNumber.js'
 
 export async function uploadMatch(event){
@@ -56,6 +56,7 @@ export async function uploadMatch(event){
 
                         await setDoc(match_doc_ref, match_data).then(() => {
                             console.log("Match data saved");
+                            sync();
                             Swal.fire({
                               title: "Successful!",
                               text: "Match data saved",
