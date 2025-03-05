@@ -1,0 +1,21 @@
+<div class='flex-column p-2 d-flex' style='height:100vh;'>
+    <h3 class='mt-2'>Saved Teams</h3> 
+    <hr class='mb-3'> 
+    <div style='flex-grow:1;max-height:90%' class='d-flex flex-column'>
+        <ul class="list-group overflow-auto mb-2" id='teamsList' style='height: 90%;'>
+            <div class="d-flex align-items-center" id='loading'>
+              Loading...
+              <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+            </div>
+        </ul>
+        <div class='d-flex' style='margin-top:auto;margin-right:auto'>
+            <button type='button' class='btn btn-outline-success' id='compareTeams'>Compare</button>
+            <button type='button' class='btn btn-outline-success ms-2' id='createTeamsLineGraph' style='display:none'>Line</button>
+            <button type='button' class='btn btn-outline-success ms-2' id='analyze' onclick='loadPage("analyze.html")'>Analyze</button>
+            <button type='button' class='btn btn-outline-danger ms-2' id ='deleteTeamSelect'>Delete</button>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="loadPage('form.html')">
+          <i class="bi bi-arrow-left"></i> Back
+        </button>
+    </div>
+</div>

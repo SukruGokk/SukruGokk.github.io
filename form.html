@@ -1,0 +1,152 @@
+<div class='p-2 flex-column d-flex'>
+    <img src='/resources/images/logo.png' class='img-fluid mb-4'>
+
+     <div class="form-group mb-3">
+        <input type="text" class="form-control" id="teamName" placeholder="Team Name" valid='true' readonly>
+    </div>            
+    <div class="form-group mb-3">
+        <label for="teamNumber" class="form-label">Team Number</label>
+        <div class='input-group'>
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="number-addon" style='border-bottom-right-radius: 0; border-top-right-radius: 0;'>#</span>
+            </div>
+            <input type="number" class="form-control" id="teamNumber" placeholder="Enter team number" aria-describedby="number-addon">
+        </div>
+    </div>            
+    
+    <div class="form-group mb-3">
+        <label for="match" class="form-label">Match Number</label>
+        <input type="number" class="form-control" id="match" placeholder="Enter match number">
+    </div>
+
+    <h5 class="mb-3">Autonomous</h5>
+    <div class='form-group mb-3' id='moved-group'>
+        <input class="form-check-input moved" type="checkbox" value="moved" id="moved" name='moved'>
+        <label class="form-check-label" for="moved">Moved</label>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l1-coral-auto' class='form-label'>Corals Scored - L1</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='autol1'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l2-coral-auto' class='form-label'>Corals Scored - L2</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='autol2'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l3-coral-auto' class='form-label'>Corals Scored - L3</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='autol3'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l4-coral-auto' class='form-label'>Corals Scored - L4</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='autol4'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l4-coral-auto' class='form-label'>Algae Scored - Net</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='auto_net'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 6)">+</button>
+        </div>     
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l4-coral-auto' class='form-label'>Algae Scored - Processor</label>
+        <div class="quantity-field">
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='auto_processor'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 6)">+</button>
+        </div>
+    </div>
+    <hr class="my-4">
+    
+    <h5 class="mb-3">TeleOp</h5>
+    <div class='form-group mb-3'>
+        <label for='l1-coral-teop' class='form-label'>Corals Scored - L1</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='teopl1'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l2-coral-teop' class='form-label'>Corals Scored - L2</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='teopl2'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l3-coral-teop' class='form-label'>Corals Scored - L3</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='teopl3'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l4-coral-teop' class='form-label'>Corals Scored - L4</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='teopl4'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 12)">+</button>
+        </div>
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l4-coral-auto' class='form-label'>Algae Scored - Net</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='teop_net'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 6)">+</button>
+        </div> 
+    </div>
+    <div class='form-group mb-3'>
+        <label for='l4-coral-auto' class='form-label'>Algae Scored - Processor</label>
+        <div class="quantity-field" >
+            <button class="value-button btn border decrease-button"onclick="decreaseValue(this)">-</button>
+            <div class="number border-top border-bottom" id='teop_processor'>0</div>
+            <button class="value-button btn border increase-button" onclick="increaseValue(this, 6)">+</button>
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    <h5 class="mb-3">Endgame</h5>
+    <div class='form-group mb-3'>
+        <label for='cage' class='form-label'>Climb Position</label>
+        <select class="form-select" id="cage" name='climb'>
+            <option value="shallow">Shallow Cage</option>
+            <option value="deep">Deep Cage</option>
+            <option value="failed">Failed Climb</option>
+            <option value='parked'>Parked</option>
+            <option value='not_parked'>Not Parked</option>
+        </select>
+    </div>
+
+    <div id="reader" width="600px" style='display:none'></div>
+
+    <button id='submit' class="btn btn-outline-primary w-100">Submit</button>
+    <div class='d-flex mt-2 gap-2'>
+    <button id='graph' class='btn btn btn-outline-success w-100' onclick='loadPage("graph.html")' style='flex-grow:1'>Teams</button>
+    <button id='list' class='btn btn btn-outline-success w-100' onclick='loadPage("list.html")' style='flex-grow:1'>List</button>
+    <button id='gallery' class='btn btn btn-outline-success w-100' onclick='loadPage("gallery.html")' style='flex-grow:1'>Gallery</button>
+    </div>
+    <label class="btn btn-outline-danger mt-2">Upload Match
+        <input type="file" class="form-control d-none" id="uploadMatch" accept="capture=camera,image/*" multiple>
+    </label>
+</div>

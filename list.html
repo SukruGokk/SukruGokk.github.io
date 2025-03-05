@@ -1,0 +1,31 @@
+<div class='flex-column p-2 d-flex' style='height:100vh;'>    
+    <div style='flex-grow:1;' class='mt-2'>
+        <select class='form-select' id='sortingStat'>
+            <option value='default' selected>Choose a stat (scores per match)</option>
+            <option value='autol1'>Auto - L1</option>
+            <option value='autol2'>Auto - L2</option>
+            <option value='autol3'>Auto - L3</option>
+            <option value='autol4'>Auto - L4</option>
+            <option value='auto_net'>Auto - Algae Net</option>
+            <option value='auto_processor'>Auto - Algae Processor</option>
+            <option value='auto'>Autonomous Total</option>
+            <option value='teopl1'>TeOp - L1</option>
+            <option value='teopl2'>TeOp - L2</option>
+            <option value='teopl3'>TeOp - L3</option>
+            <option value='teopl4'>TeOp - L4</option>
+            <option value='teop_net'>TeOp - Algae Net</option>
+            <option value='teop_processor'>TeOp - Algae Processor</option>
+            <option value='teop'>Teleoperation Total</option>
+            <option value='coral'>Coral Total</option>
+            <option value='algae'>Algae Total</option>
+            <option value='cage'>Climb</option>
+            <option value='score'>Total Score</option>
+        </select>
+        <ul class='mt-3 list-group overflow-auto' id='teams-list' style='max-height:85vh'>
+             
+        </ul>
+    </div>
+    <button class="btn btn-outline-primary mt-2" onclick="loadPage('form.html')" id="matchesGraph">
+      <i class="bi bi-arrow-left"></i> Back
+    </button>
+</div>

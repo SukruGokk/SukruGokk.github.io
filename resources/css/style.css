@@ -1,0 +1,99 @@
+.team-element:hover{
+    cursor: pointer;
+}
+
+.quantity-field {
+  display: flex;
+  height: 40px;
+}
+
+.quantity-field .value-button{ 
+  width: 40px;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+}
+
+.quantity-field .decrease-button {
+  border-radius: 8px 0 0 8px;
+}
+
+.quantity-field .increase-button {
+  border-radius: 0 8px 8px 0;
+}
+ 
+.quantity-field .number{
+  display: inline-block;
+  text-align: center;
+  border: none;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 1.3rem;
+}
+
+.btn-outline-success {
+    color: #45b17a;
+    border-color: #45b17a;
+}
+.btn-outline-success:hover{
+    background-color: #45b17a;
+    color: white;
+}
+
+.btn-outline-danger {
+    color: #e04f4f;
+    border-color: #e04f4f;
+}
+.btn-outline-danger:hover{
+    background-color: #e04f4f;
+    color: white;
+}
+
+.btn-outline-primary {
+    color: #3d8bfd;
+    border-color: #3d8bfd;
+}
+
+.btn-outline-primary:hover{
+    background-color: #3d8bfd;
+    color: white;
+} 
+
+input[type]:focus,
+.form-select:focus{   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+#moved:checked{
+  background-color: rgba(126, 239, 104, 0.8) !important;
+  border: 0;
+}
+
+.value-button {
+    cursor: pointer;
+    outline: none;  
+    border-color: #6c757d;
+    transition: border-color 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+
+.value-button.clicked {
+    border-color: rgba(126, 239, 104, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: none;
+}
+
+.equal-height{
+    height: 38px;
+}
+
+.teamCard:hover{
+    cursor:pointer;
+}
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+i}

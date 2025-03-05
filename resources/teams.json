@@ -1,0 +1,895 @@
+{
+"teams":
+	[
+  {
+    "city": "Bodrum",
+    "country": "Türkiye",
+    "key": "frc10064",
+    "name": "BODRUM ANADOLU LİSESİ",
+    "nickname": "HanniBAL",
+    "state_prov": "Mugla",
+    "team_number": 10064
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc10105",
+    "name": "İSTANBUL - KÜÇÜKÇEKMECE ZEHRA MUSTAFA DALGIÇ MESLEKİ VE TEKNİK ANADOLU LİSESİ",
+    "nickname": "BLACK MAMBA",
+    "state_prov": "Istanbul",
+    "team_number": 10105
+  },
+  {
+    "city": "Pendik ",
+    "country": "Türkiye",
+    "key": "frc10146",
+    "name": "BİS NATIONAL SCHOOL",
+    "nickname": "Elbis Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 10146
+  },
+  {
+    "city": "BEYOĞLU",
+    "country": "Türkiye",
+    "key": "frc10203",
+    "name": "Özel Getronagan Ermeni Anadolu Lisesi",
+    "nickname": "LANCE",
+    "state_prov": "Istanbul",
+    "team_number": 10203
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc10209",
+    "name": "Boeing&Family/Community",
+    "nickname": "The Valtra",
+    "state_prov": "Istanbul",
+    "team_number": 10209
+  },
+  {
+    "city": "ISTANBUL",
+    "country": "Türkiye",
+    "key": "frc10234",
+    "name": "TED ATAKENT KOLEJİ",
+    "nickname": "TEDRA",
+    "state_prov": "Istanbul",
+    "team_number": 10234
+  },
+  {
+    "city": "Maltepe",
+    "country": "Türkiye",
+    "key": "frc10236",
+    "name": "Figopara /Üçer Zımpara Taşlama/Paybull/TDM Kesici Takım&TED RONESANS COLLEGE",
+    "nickname": "REXTED",
+    "state_prov": "Istanbul",
+    "team_number": 10236
+  },
+  {
+    "city": "Sultangazi",
+    "country": "Türkiye",
+    "key": "frc10308",
+    "name": "Sultangazi Mesleki ve Teknik Anadolu Lisesi",
+    "nickname": "Hive Mind",
+    "state_prov": "Istanbul",
+    "team_number": 10308
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc10328",
+    "name": "IBB Teknoloji Atolyeleri & IBB",
+    "nickname": "IBBTECH-JR",
+    "state_prov": "Istanbul",
+    "team_number": 10328
+  },
+  {
+    "city": "Sardes",
+    "country": "Türkiye",
+    "key": "frc10334",
+    "name": "Family/Community",
+    "nickname": "Sardis Robotics",
+    "state_prov": "Manisa",
+    "team_number": 10334
+  },
+  {
+    "city": "Kadıkoy",
+    "country": "Türkiye",
+    "key": "frc10337",
+    "name": "Ahmet Sani Gezici Kız Anadolu İHL",
+    "nickname": "Technoka Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 10337
+  },
+  {
+    "city": "HATAY ",
+    "country": "Türkiye",
+    "key": "frc10353",
+    "name": "hatay doga koleji",
+    "nickname": "HATAY ROBOTICS",
+    "state_prov": "Hatay",
+    "team_number": 10353
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc10396",
+    "name": "Family/Community",
+    "nickname": "Mostra",
+    "state_prov": "Istanbul",
+    "team_number": 10396
+  },
+  {
+    "city": "Fatih",
+    "country": "Türkiye",
+    "key": "frc10422",
+    "name": "çapa fen lisesi",
+    "nickname": "Çapa Pineapple Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 10422
+  },
+  {
+    "city": "ISTANBUL",
+    "country": "Türkiye",
+    "key": "frc10432",
+    "name": "ÖZEL KEMERBURGAZ BİLİM ANADOLU LİSESİ",
+    "nickname": "Okeanos",
+    "state_prov": "Istanbul",
+    "team_number": 10432
+  },
+  {
+    "city": "Shanghai",
+    "country": "China",
+    "key": "frc10541",
+    "name": "Family/Community",
+    "nickname": "CarbonPulse Robotics",
+    "state_prov": "Shanghai",
+    "team_number": 10541
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc10689",
+    "name": "KAGITHANE ıLCE MİLLİ EGITIM MUDURLUGU",
+    "nickname": "KAGITHANE TEKNOLOJI TAKIMI",
+    "state_prov": "Istanbul",
+    "team_number": 10689
+  },
+  {
+    "city": "ISTANBUL",
+    "country": "Türkiye",
+    "key": "frc10692",
+    "name": "Family/Community",
+    "nickname": "GOLDEN APPLE",
+    "state_prov": "Istanbul",
+    "team_number": 10692
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc2905",
+    "name": "Fikret Yuksel Foundation/Sertplas/Darüşşafaka Eğitim Kurumları&Darussafaka Educational Institutions",
+    "nickname": "Sultans of Turkiye",
+    "state_prov": "Istanbul",
+    "team_number": 2905
+  },
+  {
+    "city": "ISTANBUL",
+    "country": "Türkiye",
+    "key": "frc5665",
+    "name": "Dogus Group & Family/Community",
+    "nickname": "FENERBAHÇE DOGUS SPARC",
+    "state_prov": "Istanbul",
+    "team_number": 5665
+  },
+  {
+    "city": "BEYLIKDUZU",
+    "country": "Türkiye",
+    "key": "frc5773",
+    "name": "Yasar Acar & Yasar Acar Fen Lisesi",
+    "nickname": "YAFL Mechatronics",
+    "state_prov": "Istanbul",
+    "team_number": 5773
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc6014",
+    "name": "Türkiye Finans/Turcom Teknoloji/Tersan Shipyard&Robert College",
+    "nickname": "ARC",
+    "state_prov": "Istanbul",
+    "team_number": 6014
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc6064",
+    "name": "A101/EAE Electrical/NMQ Digital/EGEBant/BOSCH/PROASIST / ARMES PANO/Fikret Yuksel Foundation/3M/Solidworks&Sisli Technical and Vocational High School",
+    "nickname": "IstanBULLS",
+    "state_prov": "Istanbul",
+    "team_number": 6064
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc6228",
+    "name": "Ministry of Education/YTÜ Yıldız Teknopark/Dow Chemical Company/FRC Sustainability – HQ/Fikret Yuksel Foundation&YTU MAÇKA MESLEKİ VE TEKNİK ANADOLU LİSESİ",
+    "nickname": "MAT Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 6228
+  },
+  {
+    "city": "istanbul",
+    "country": "Türkiye",
+    "key": "frc6232",
+    "name": "Turkish Airlines/istanbul city municipality/Karbosan/Birboy Tekstil/Raunt/Eteration/Robotus/Cam Merkezi/Pano Metal/Aydoğan Doğrama/Mask Reklam/TAV HOLDING/ROBOTZADE&Florya Koleji",
+    "nickname": "Florya Bisons",
+    "state_prov": "Istanbul",
+    "team_number": 6232
+  },
+  {
+    "city": "Dosemealti",
+    "country": "Türkiye",
+    "key": "frc6874",
+    "name": "MGA Airlines/Levent Kimya/Antera&Özel Antalya Bahçeşehir Anadolu Lisesi",
+    "nickname": "Mediterra",
+    "state_prov": "Antalya",
+    "team_number": 6874
+  },
+  {
+    "city": "Kartal",
+    "country": "Türkiye",
+    "key": "frc6948",
+    "name": "PETROFER ENDÜSTRİYEL YAĞLAR /Marmara Türbin/Kartal Belediyesi/Alpha Metalurji/Gelişim Valf ve Makina Sanayi Ticaret Limited Şirketi/Demak Hidrolik&ŞEHİT OGRETMEN HÜSEYİN AGIRMAN MESLEKİ VE TEKNİK ANADOLU LİSESİ",
+    "nickname": "EAGLES",
+    "state_prov": "Istanbul",
+    "team_number": 6948
+  },
+  {
+    "city": "Dilovası",
+    "country": "Türkiye",
+    "key": "frc6985",
+    "name": "ENKA FOUNDATION/ÇİMTAŞ/ENKA POWER/ENKA TC/ENKA CCI/ENKA TMD/I-MAK Redüktör&ENKA TECHNICAL HIGH SCHOOL",
+    "nickname": "ENKA TECH",
+    "state_prov": "Kocaeli",
+    "team_number": 6985
+  },
+  {
+    "city": "Başakşehir",
+    "country": "Türkiye",
+    "key": "frc7536",
+    "name": "Analiz Group/AKYA Osgb/Basaksehir Belediyesi/Basaksehir Kaymakamlığı&Akif İnan Anadolu İmam Hatip Lisesi",
+    "nickname": "ANKA ROBOTICS",
+    "state_prov": "Istanbul",
+    "team_number": 7536
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "key": "frc7539",
+    "name": "Dhirubhai Ambani International School&Dhirubhai Ambani International School",
+    "nickname": "Elev8",
+    "state_prov": "Maharashtra",
+    "team_number": 7539
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc7576",
+    "name": "Feyziye Mektepleri Vakfı - Işık Okulları/Ali Raif İlaç Sanayi A.Ş./Muya/Tekniktel/Laminateks&FMV PRIVATE ISPARTAKULE IŞIK HIGH SCHOOL",
+    "nickname": "FMWill",
+    "state_prov": "Istanbul",
+    "team_number": 7576
+  },
+  {
+    "city": "Üsküdar",
+    "country": "Türkiye",
+    "key": "frc7742",
+    "name": "Cosmos Robot Works&Nakkastepe Bahcesehir High School Of Science & Technology",
+    "nickname": "Cosmos Robot Works",
+    "state_prov": "Istanbul",
+    "team_number": 7742
+  },
+  {
+    "city": "istanbul",
+    "country": "Türkiye",
+    "key": "frc7748",
+    "name": "&TENZİLE ERDOĞAN KIZ ANADOLU İMAM HATİP LİSESİ",
+    "nickname": "TECHTOLIA ROBOTICS",
+    "state_prov": "Istanbul",
+    "team_number": 7748
+  },
+  {
+    "city": "Mersin",
+    "country": "Türkiye",
+    "key": "frc8071",
+    "name": "Özel Şişecam Mesleki Ve Teknik Anadolu Lisesi",
+    "nickname": "R3-D3 Mersin",
+    "state_prov": "Mersin",
+    "team_number": 8071
+  },
+  {
+    "city": "Ümraniye",
+    "country": "Türkiye",
+    "key": "frc8084",
+    "name": "İSTANBUL TİCARET BORSASI&ÜMRANİYE ATATÜRK MESLEKİ VE TEKNİK ANADOLU LİSESİ",
+    "nickname": "ALFA ROBOTICS",
+    "state_prov": "Istanbul",
+    "team_number": 8084
+  },
+  {
+    "city": "GuangZhou",
+    "country": "China",
+    "key": "frc8214",
+    "name": "Next Innovation STEM center/Tomorrow Advancing Life/Xometry/GAC Honda Automobile Co., Ltd./Boeing&Family/Community",
+    "nickname": "Cyber Unicorn",
+    "state_prov": "Guangdong",
+    "team_number": 8214
+  },
+  {
+    "city": "istanbul",
+    "country": "Türkiye",
+    "key": "frc8263",
+    "name": "Private Saint Benoît French Highschool School Council&Saint Benoît French High School  - Lycée français Saint Benoît - Saint Benoît Fransız Lisesi",
+    "nickname": "Robin",
+    "state_prov": "Istanbul",
+    "team_number": 8263
+  },
+  {
+    "city": "GÖLCÜK",
+    "country": "Türkiye",
+    "key": "frc8308",
+    "name": "GOLCUK FEN LISESI",
+    "nickname": "GFLRobotics",
+    "state_prov": "Kocaeli",
+    "team_number": 8308
+  },
+  {
+    "city": "Beyoğlu",
+    "country": "Türkiye",
+    "key": "frc9020",
+    "name": "Galatasaray Spor Kulübü/Galatasaray Altyapı Geliştirme Derneği/Galatasaray Lisesi 128.Dönem Mezunları/Boeing/Raytheon Technologies /Rockwell Automation&Galatasaray High School",
+    "nickname": "Galatasaray Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 9020
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc9026",
+    "name": "Aero",
+    "nickname": "Aero",
+    "state_prov": "Istanbul",
+    "team_number": 9026
+  },
+  {
+    "city": "Çankaya",
+    "country": "Türkiye",
+    "key": "frc9029",
+    "name": "Family/Community",
+    "nickname": "Team NF",
+    "state_prov": "Ankara",
+    "team_number": 9029
+  },
+  {
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "key": "frc9089",
+    "name": "American College of Sofia",
+    "nickname": "ACS Phoenix",
+    "state_prov": "Sofia",
+    "team_number": 9089
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc9231",
+    "name": "Haydarpasa Lisesi",
+    "nickname": "Haydarpasa Panthers",
+    "state_prov": "Istanbul",
+    "team_number": 9231
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc9247",
+    "name": "Integra Tasarım/Saint-Michel French High School/Mobilproses/Saint-Michel French High School Family Union/Crocus/Sette Kanat/Karapıçak Hukuk/Transay/SEDER Advertisement/Özkayalar Paslanmaz&Saint Michel Private French High School",
+    "nickname": "SainTech Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 9247
+  },
+  {
+    "city": "Başakşehir",
+    "country": "Türkiye",
+    "key": "frc9422",
+    "name": "REGNUM OTOMOTİV /KOÇ AUTOMOTIVE/GÜRYAY/GENYA&Family/Community",
+    "nickname": "Team Forza",
+    "state_prov": "Istanbul",
+    "team_number": 9422
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc9519",
+    "name": "Ergün Öner Mehmet Öner Anadolu Lisesi",
+    "nickname": "RoboMasters",
+    "state_prov": "Istanbul",
+    "team_number": 9519
+  },
+  {
+    "city": "Kocaeli",
+    "country": "Türkiye",
+    "key": "frc9523",
+    "name": "Özel Kocaeli Gebze Bahçeşehir Anadolu Lisesi",
+    "nickname": "Archers",
+    "state_prov": "Kocaeli",
+    "team_number": 9523
+  },
+  {
+    "city": "Fatih",
+    "country": "Türkiye",
+    "key": "frc9601",
+    "name": "&Family/Community",
+    "nickname": "BageTech",
+    "state_prov": "Istanbul",
+    "team_number": 9601
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "key": "frc9609",
+    "name": "Family/Community",
+    "nickname": "Paraducks",
+    "state_prov": "Maharashtra",
+    "team_number": 9609
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc10185",
+    "name": "Nautilus",
+    "nickname": "HYDROB",
+    "state_prov": "Istanbul",
+    "team_number": 10185
+  },
+  {
+    "city": "Beylikdüzü",
+    "country": "Türkiye",
+    "key": "frc10202",
+    "name": "Büyükşehir Hüseyin Yıldız Anadolu Lisesi",
+    "nickname": "NOVATRON",
+    "state_prov": "Istanbul",
+    "team_number": 10202
+  },
+  {
+    "city": "Konak",
+    "country": "Türkiye",
+    "key": "frc10205",
+    "name": "Lider İnşaat/Philips Evnia/PcKolik&Private Turkish College",
+    "nickname": "MAGNETAR",
+    "state_prov": "Izmir",
+    "team_number": 10205
+  },
+  {
+    "city": "İSTANBUL",
+    "country": "Türkiye",
+    "key": "frc10230",
+    "name": "ÖZEL NUN ANADOLU LİSESİ",
+    "nickname": "The Splash",
+    "state_prov": "Istanbul",
+    "team_number": 10230
+  },
+  {
+    "city": "ISTANBUL",
+    "country": "Türkiye",
+    "key": "frc10234",
+    "name": "TED ATAKENT KOLEJİ",
+    "nickname": "TEDRA",
+    "state_prov": "Istanbul",
+    "team_number": 10234
+  },
+  {
+    "city": "Athens",
+    "country": "Greece",
+    "key": "frc10261",
+    "name": "Family/Community",
+    "nickname": "PYRONEERS",
+    "state_prov": "Attiki",
+    "team_number": 10261
+  },
+  {
+    "city": "İSTANBUL",
+    "country": "Türkiye",
+    "key": "frc10321",
+    "name": "MBA OKULLARİ ATAKENT KAMPUSU & MBA OKULLARI",
+    "nickname": "MBA Robotics Imperio",
+    "state_prov": "Istanbul",
+    "team_number": 10321
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc10396",
+    "name": "Family/Community",
+    "nickname": "Mostra",
+    "state_prov": "Istanbul",
+    "team_number": 10396
+  },
+  {
+    "city": "ŞİŞLİ",
+    "country": "Türkiye",
+    "key": "frc10415",
+    "name": "Şişli Anatolian High School",
+    "nickname": "Torchers",
+    "state_prov": "Istanbul",
+    "team_number": 10415
+  },
+  {
+    "city": "Shanghai",
+    "country": "China",
+    "key": "frc10541",
+    "name": "Family/Community",
+    "nickname": "CarbonPulse Robotics",
+    "state_prov": "Shanghai",
+    "team_number": 10541
+  },
+  {
+    "city": "KARTAL",
+    "country": "Türkiye",
+    "key": "frc10542",
+    "name": "Samsung/PIN Drinks/D724 Bilişim Hizmetleri/İpek Mühendislik/Rekor Boya&ÖZEL KARTAL BAHÇEŞEHİR KOLEJİ ANADOLU LİSESİ",
+    "nickname": "EAGLE WARRIORS",
+    "state_prov": "Istanbul",
+    "team_number": 10542
+  },
+  {
+    "city": "Mardin",
+    "country": "Türkiye",
+    "key": "frc10549",
+    "name": "Özel Mardin Bahçeşehir Anadolu Lisesi",
+    "nickname": "MardinBK Robocretors Team",
+    "state_prov": "Mardin",
+    "team_number": 10549
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc2905",
+    "name": "Fikret Yuksel Foundation/Sertplas/Darüşşafaka Eğitim Kurumları&Darussafaka Educational Institutions",
+    "nickname": "Sultans of Turkiye",
+    "state_prov": "Istanbul",
+    "team_number": 2905
+  },
+  {
+    "city": "Gebze",
+    "country": "Türkiye",
+    "key": "frc4191",
+    "name": "SIEMENS/DAIKIN/Turkish Education Foundation(TEV)/UPS Turkey&TEV Inanc Turkes High School",
+    "nickname": "IMC",
+    "state_prov": "Kocaeli",
+    "team_number": 4191
+  },
+  {
+    "city": "Glarus",
+    "country": "Switzerland",
+    "key": "frc6417",
+    "name": "Walters Kundert Stiftung/Glaroform AG/Debrunner Acifer AG/Baeckerei Gabriel/Marti Engineering AG, Mitloedi/Source Graphics GmbH/Kamm Bartel Stiftung/RHS&P Lawyers/Kalkfabrik Netstal AG/Sauter, Bachmann AG/Hasler Stiftung/Teamco Foundation Schweiz/Kantonsspital Glarus AG/Anne Marie Schindler Stiftung/Ida und Rudolf Schrepfer Stiftung&Kantonsschule Glarus",
+    "nickname": "Fridolins",
+    "state_prov": "Glarus",
+    "team_number": 6417
+  },
+  {
+    "city": "BORNOVA",
+    "country": "Türkiye",
+    "key": "frc6429",
+    "name": "Boeing/Sepconn Electronics/Özdemir Mühendislik/5S Otomotiv/Tahsin Ekşi/SolidWorks/Bahçeşehir Koleji/Kaan Makine/DMS Ltd Şti/SİSKON Software & Automation/HAVASİS A.Ş./VTS Mühendislik Ltd. Şti/Bayramlar Hırdavat/Emniyet Rulman/Dere Mensucat Ltd.Şti./Rizmir İnşaat/Yön Civata/Tesa/Pivottex/Beyaz Lazer/Vestel Elektronik A.Ş./CMS Jant ve Makina Sanayi AŞ/Bosch&İzmir Bahçeşehir High School for Science and Technology",
+    "nickname": "4th Dimension",
+    "state_prov": "Izmir",
+    "team_number": 6429
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc6431",
+    "name": "Sarmakina/Şenpiliç/Fibabanka/Netaş/Rockwell Automation/Boeing&Hisar School",
+    "nickname": "NoktaParantez",
+    "state_prov": "Istanbul",
+    "team_number": 6431
+  },
+  {
+    "city": "ÇEKMEKÖY",
+    "country": "Türkiye",
+    "key": "frc6838",
+    "name": "Nitrocare&SEV AMERICAN COLLEGE",
+    "nickname": "X-SHARC",
+    "state_prov": "Istanbul",
+    "team_number": 6838
+  },
+  {
+    "city": "Karşıyaka",
+    "country": "Türkiye",
+    "key": "frc6988",
+    "name": "Norm Holding/Ege Pen/Fikret Yüksel Organization/Solidworks Corp./E.C.A./acigarage&American Collegiate Institute",
+    "nickname": "ACI 35",
+    "state_prov": "Izmir",
+    "team_number": 6988
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc6989",
+    "name": "MCA Mühendislik/BEOSİS Proje Taahhüt&ALMAN LİSESİ",
+    "nickname": "KAISER",
+    "state_prov": "Istanbul",
+    "team_number": 6989
+  },
+  {
+    "city": "ISTANBUL",
+    "country": "Türkiye",
+    "key": "frc7050",
+    "name": "SULTANAHMET MESLEKI VE TEKNIK ANADOLU LISESI",
+    "nickname": "SARNIC",
+    "state_prov": "Istanbul",
+    "team_number": 7050
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc7298",
+    "name": "SolidWorks/ZAXE/Dostel Automation/Fikret Yuksel Foundation/3M/özde denizcilik/Autodesk&Family/Community",
+    "nickname": "TOROS",
+    "state_prov": "Istanbul",
+    "team_number": 7298
+  },
+  {
+    "city": "istanbul",
+    "country": "Türkiye",
+    "key": "frc7444",
+    "name": "Boeing/RTX-Raytheon/Borusan Holding&Borusan Asım Kocabıyık MTAL",
+    "nickname": "MOON STAR ROBOTICS",
+    "state_prov": "Istanbul",
+    "team_number": 7444
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "key": "frc7539",
+    "name": "Dhirubhai Ambani International School&Dhirubhai Ambani International School",
+    "nickname": "Elev8",
+    "state_prov": "Maharashtra",
+    "team_number": 7539
+  },
+  {
+    "city": "ANTALYA",
+    "country": "Türkiye",
+    "key": "frc7672",
+    "name": "Arabica Coffee House/Ak Gıda&ÖZEL KONYAALTI BAHÇEŞEHİR KOLEJİ",
+    "nickname": "SCORPIONS ROBOTICS",
+    "state_prov": "Antalya",
+    "team_number": 7672
+  },
+  {
+    "city": "ISTANBUL",
+    "country": "Türkiye",
+    "key": "frc7758",
+    "name": "MEV SCHOOLS",
+    "nickname": "MEVOLUTION",
+    "state_prov": "Istanbul",
+    "team_number": 7758
+  },
+  {
+    "city": "Guangzhou",
+    "country": "China",
+    "key": "frc8011",
+    "name": "Family/Community",
+    "nickname": "Kirin",
+    "state_prov": "Guangdong",
+    "team_number": 8011
+  },
+  {
+    "city": "Gaziemir",
+    "country": "Türkiye",
+    "key": "frc8056",
+    "name": "Aero Wind Industry/FMI Food & Chemical/Referans Gıda/İzmir Personel Giyim/Hugo Boss&Ensia Youth",
+    "nickname": "Laissez Faire",
+    "state_prov": "Izmir",
+    "team_number": 8056
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc8151",
+    "name": "Burcak Eyuboglu Science and Technology High School",
+    "nickname": "Wildfire",
+    "state_prov": "Istanbul",
+    "team_number": 8151
+  },
+  {
+    "city": "Beşiktaş",
+    "country": "Türkiye",
+    "key": "frc8182",
+    "name": "Sakıp Sabancı Anatolian High School",
+    "nickname": "Loth Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 8182
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc8209",
+    "name": "3E Endüstriyel Mühendislik San ve Tic Ltd Şti/Aytek Makine/Sarısoylar Turizm Ltd. Şti/Instra Danışmanlık/SnapBytes Bilgi Teknolojileri/Lentatek/Aksaç Sağlık Hizmetleri Ltd. Şti/İnteraktif Bilgisayar/AKM Metalurji Sanayii Temsilcilik/KOÇ Kablo San. ve Tic. A.Ş./ENTA Mühendislik/Farmco/Lighthouse Worldwide Solutions&Özel Sezin Okulu",
+    "nickname": "SEZMECH",
+    "state_prov": "Istanbul",
+    "team_number": 8209
+  },
+  {
+    "city": "GÖLCÜK",
+    "country": "Türkiye",
+    "key": "frc8308",
+    "name": "GOLCUK FEN LISESI",
+    "nickname": "GFLRobotics",
+    "state_prov": "Kocaeli",
+    "team_number": 8308
+  },
+  {
+    "city": "İSTANBUL",
+    "country": "Türkiye",
+    "key": "frc8759",
+    "name": "ARAŞTIRMA GELİŞTİRME EĞİTİM VE UYGULAMA MERKEZİ LİSESİ",
+    "nickname": "ARPEX",
+    "state_prov": "Istanbul",
+    "team_number": 8759
+  },
+  {
+    "city": "DIDIM",
+    "country": "Türkiye",
+    "key": "frc8760",
+    "name": "BILIM TEKNOLOJI TASARIM YAZILIM EGITIM VE DESTEKLEME DERNEGI/FIRST&BİLİM TEKNOLOJİ TASARIM YAZILIM EĞİTİM VE DESTEKLEME DERNEĞİ",
+    "nickname": "Foresighters Robotics",
+    "state_prov": "Aydin",
+    "team_number": 8760
+  },
+  {
+    "city": "Sultanbeyli",
+    "country": "Türkiye",
+    "key": "frc8798",
+    "name": "DOW CHEMICAL/RİYM GÜLER MİMARLIK/SARA BETÜL GÜLER&Sultanbeyli Mülteciler Derneği",
+    "nickname": "DAMAS ROBO",
+    "state_prov": "Istanbul",
+    "team_number": 8798
+  },
+  {
+    "city": "izmir",
+    "country": "Türkiye",
+    "key": "frc9021",
+    "name": "HC Biologics (Husnu Ceylan)/BAL America/Matmetal (Murat Gulcag)/NORM Civata&Bornova Anadolu Lisesi",
+    "nickname": "uSELESScASE",
+    "state_prov": "Izmir",
+    "team_number": 9021
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc9025",
+    "name": "Öztiryakiler/Arsago/STOCX/Tek Lazer/Kestak Dişli/Tiryakiler/Yılmaz Redüktör/YTÜ Yıldız Prototip Atölyesi/TEKYAZ/SOLIDWORKS/Vefa Lisesi Okul Aile Birliği/Vefa Lisesi Mezunlar Derneği&Vefa High School",
+    "nickname": "Mechameleons",
+    "state_prov": "Istanbul",
+    "team_number": 9025
+  },
+  {
+    "city": "Manisa",
+    "country": "Türkiye",
+    "key": "frc9043",
+    "name": "E.C.A./Ege Alternatif Mühendislik &Manisa Fen Lisesi",
+    "nickname": "Valkyrie",
+    "state_prov": "Manisa",
+    "team_number": 9043
+  },
+  {
+    "city": "KONAK",
+    "country": "Türkiye",
+    "key": "frc9070",
+    "name": "İNAMLIK GROUP/Ruby  Games/Nazmi Arıkan Fen Bilimleri Dershanesi Montrö Şubesi /Jantsa&İzmir Atatürk Lisesi",
+    "nickname": "CELESTIAL",
+    "state_prov": "Izmir",
+    "team_number": 9070
+  },
+  {
+    "city": "Kadıköy",
+    "country": "Türkiye",
+    "key": "frc9077",
+    "name": "Fenerbahçe Üniversitesi/TÜBİTAK RUTE/Mollas/YechOps&İSTANBUL ATATÜRK FEN LİSESİ",
+    "nickname": "The Crown",
+    "state_prov": "Istanbul",
+    "team_number": 9077
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc9231",
+    "name": "Haydarpasa Lisesi",
+    "nickname": "Haydarpasa Panthers",
+    "state_prov": "Istanbul",
+    "team_number": 9231
+  },
+  {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "key": "frc9247",
+    "name": "Integra Tasarım/Saint-Michel French High School/Mobilproses/Saint-Michel French High School Family Union/Crocus/Sette Kanat/Karapıçak Hukuk/Transay/SEDER Advertisement/Özkayalar Paslanmaz&Saint Michel Private French High School",
+    "nickname": "SainTech Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 9247
+  },
+  {
+    "city": "Maltepe",
+    "country": "Türkiye",
+    "key": "frc9464",
+    "name": "Family/Community",
+    "nickname": "Başakşehir Robotics",
+    "state_prov": "Istanbul",
+    "team_number": 9464
+  },
+  {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "key": "frc9468",
+    "name": "Ayet Azer Aran Savunma Sanayi Mesleki ve Teknik Anadolu Lisesi",
+    "nickname": "Team Sirius",
+    "state_prov": "Istanbul",
+    "team_number": 9468
+  },
+  {
+    "city": "Küçükçekmece",
+    "country": "Türkiye",
+    "key": "frc9497",
+    "name": "Dogan Cüceloğlu Fen Lisesi & Dogan Cüceloğlu Fen Lisesi",
+    "nickname": "NIMBLE PANTHER",
+    "state_prov": "Istanbul",
+    "team_number": 9497
+  },
+  {
+    "city": "Kayapınar",
+    "country": "Türkiye",
+    "key": "frc9502",
+    "name": "TED Diyarbakır Koleji&TED Diyarbakır Koleji",
+    "nickname": "Idigna",
+    "state_prov": "Diyarbakir",
+    "team_number": 9502
+  },
+  {
+    "city": "Kocaeli",
+    "country": "Türkiye",
+    "key": "frc9523",
+    "name": "Özel Kocaeli Gebze Bahçeşehir Anadolu Lisesi",
+    "nickname": "Archers",
+    "state_prov": "Kocaeli",
+    "team_number": 9523
+  },
+  {
+    "city": "Salihli",
+    "country": "Türkiye",
+    "key": "frc9583",
+    "name": "Geleceği Tasarlayan Gençler Derneği/Gazi Kimya/Neontek/Disera&Family/Community",
+    "nickname": "Lavender Robotics",
+    "state_prov": "Manisa",
+    "team_number": 9583
+  },
+  {
+    "city": "Gebze",
+    "country": "Türkiye",
+    "key": "frc9690",
+    "name": "Somal/Sistem Makina/Gebze Belediyesi/Alexmach/Fornasys/Fornax Software/Anadolu Tekstil/Obal Alüminyum/IK Industry/Aytaç Rulman/Mare Taşımacılık/Km Makine/IHT Industry/Promak/Efora Şirketler Grubu&Family/Community",
+    "nickname": "Defuse Robotics",
+    "state_prov": "Kocaeli",
+    "team_number": 9690
+  },
+  {
+    "city": "Gebze",
+    "country": "Türkiye",
+    "key": "frc9694",
+    "name": "TÜBİTAK Fen Lisesi/TÜBİTAK (Türkiye Bilimsel ve Teknolojik Araştırma Kurumu)/Mobisis Teknoloji/HALKBANK (TÜRKİYE HALK BANKASI)/Elsitel/Tema Alüminyum/Sivart Endüstriyel Otomasyon/TEI (TUSAŞ Motor Sanayii A.Ş.)/NT MEDİKAL & DİANOSTİC/MNM Hijyen Ped ve Sağlık Ürünleri İmalat Sanayi Ticaret Limited Şirketi/Bulut Makina/QTM/Mozaik Medikal Sağlık Gereçleri/Hasan Kartal Eğitim Vakfı/Raytheon Technologies/Rockwell Automation/EKON Endüstri ve İnşaat/Kartallar Holding/Wondress Baby/Gebze Ticaret Odası/MARMARA Teknokent/Dow Chemical Company/Ürgen Ağız ve Diş Sağlığı Polikliniği&TUBITAK FEN LİSESİ",
+    "nickname": "TUBITECH",
+    "state_prov": "Kocaeli",
+    "team_number": 9694
+  }
+]}

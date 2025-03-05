@@ -1,0 +1,21 @@
+<div class='flex-column p-2 d-flex' style='height:100vh;'>
+    <h3 class='mt-2'>Saved Matches</h3>
+    <hr class='mb-3'>
+    <div style='flex-grow:1;max-height:90%' class='d-flex flex-column'>
+        <ul class="list-group overflow-auto mb-2" id='matchesList' style='height:90%'>
+        </ul> 
+        <div class='d-flex' style='margin-top:auto;margin-right:auto'>
+            <select class="form-select w-auto" id='chartType'>
+              <option value="performance">Performance</option>
+              <option value="coral-auto">Coral - Auto</option>
+              <option value="coral-teop">Coral - Teop</option>
+              <option value="algae">Algae</option>
+              <option value='climb'>Climb</option>
+            </select>
+            <button type='button' class='btn btn-outline-success ms-2' id='createGraph'>Create</button>
+        </div>
+        <button class="btn btn-outline-primary mt-2" onclick="loadPage('graph.html')" id="matchesGraph">
+          <i class="bi bi-arrow-left"></i> Back
+        </button>
+    </div>
+</div>
