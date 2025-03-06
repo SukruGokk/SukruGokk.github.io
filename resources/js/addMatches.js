@@ -41,6 +41,9 @@ export async function addMatches(team){
                             <div class='d-flex justify-content-between w-100'>
                                 <p class="mb-1">Algae - Processor: ${doc.get("auto_processor")}</p>
                             </div>
+                            <div class='d-flex justify-content-between w-100'>
+                                <p class="mb-1">Moved: ${doc.get("moved")}</p>
+                            </div>
                             <hr class="mb-3">
                             <div class='d-flex justify-content-between w-100'>
                                 <h5>TeleOp</h5>
@@ -62,9 +65,6 @@ export async function addMatches(team){
                             </div>
                             <div class='d-flex justify-content-between w-100'>
                                 <p class="mb-1">Algae - Processor: ${doc.get("teop_processor")}</p>
-                            </div>
-                            <div class='d-flex justify-content-between w-100'>
-                                <p class="mb-1">Moved: ${doc.get("moved")}</p>
                             </div>
                             <button type="button" class="btn btn-outline-danger mt-3 delete-match" match="${doc.id}" team="${team}">Delete log</button>
 
