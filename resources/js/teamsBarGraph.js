@@ -86,7 +86,7 @@ export async function teamsBarGraph(event){
         options.plugins.title.text = 'Overall';
         
         Swal.fire({
-            html: '<canvas id="chartCanvas" style="min-height:40vh"></canvas>',
+            html: '<canvas id="chartCanvas" style="min-height:70vh"></canvas>',
             showCloseButton: true,
             showCancelButton: true,
             confirmButtonText: 'Download',
