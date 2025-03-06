@@ -17,13 +17,13 @@ export async function deleteMatch(){
                 $(this).parent().remove();
                 await deleteDoc(matchDocRef)
                     .then(() => {
+                        sync();
                         Swal.fire({
                             title: "Deleted!",
                             text: "Match log has been deleted.",
                             icon: "success"
                         }).then(()=>{
                             if (team_deleted){
-                                sync();
                                 loadPage('graph.html');
                                 teamsPage();
                             }
